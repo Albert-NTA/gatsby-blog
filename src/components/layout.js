@@ -1,5 +1,6 @@
 import React from "react";
 import "./layout.css";
+import "../assets/css/designsystem.css"
 import Menu from "./menu";
 import Sidebar from "./sidebar";
 import { StaticQuery, graphql } from "gatsby";
