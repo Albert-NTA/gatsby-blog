@@ -16,7 +16,6 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "@gotitinc/design-system": "1.6.0",
     "acorn": "^7.3.1",
     "babel-polyfill": "^6.26.0",
     "bootstrap": "3",
