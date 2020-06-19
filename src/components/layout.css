@@ -4,8 +4,8 @@ body {
   padding: 0;
   margin: 0;
   color: #222;
-  background-color: #EEEEEF;
-  font: normal normal normal 1rem/1.6 Nunito Sans, Helvetica, Arial, sans-serif;
+  background-color: #FFFFFF;
+  font: normal normal normal 1rem/1.6 Nunito Sans, Roboto, Arial, sans-serif;
 }
 
 .app {
@@ -17,12 +17,4 @@ body {
 .main {
   display: flex;
   display: -webkit-flex;
-}
-
-.sidebar {
-  width: 280px;
-}
-
-.content {
-  width: calc(100% - 280px);
 }

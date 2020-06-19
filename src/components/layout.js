@@ -1,6 +1,6 @@
 import React from "react";
-import "./layout.css";
 import "../assets/css/designsystem.css"
+import "./layout.css"
 import Menu from "./menu";
 import Sidebar from "./sidebar";
 import { StaticQuery, graphql } from "gatsby";
@@ -34,9 +34,9 @@ export default props => {
       render={data => (
         <div className="app">
           <Menu title={data.site.siteMetadata.title} />
-          <div className="main">
-            <div className="content">{children}</div>
-            <div className="sidebar">
+          <div className="main Grid Grid--withoutGutter">
+            <div className="content u-size9of12">{children}</div>
+            <div className="sidebar u-size3of12">
               <Sidebar
                 edges={data.topics.edges}
               />

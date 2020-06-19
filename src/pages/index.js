@@ -11,12 +11,10 @@ export default ({ data }) => {
     <Layout>
       <div class="u-backgroundWhite u-paddingMedium">
         <h1 class="u-marginNone">Feature</h1>
-        <div>
-          <div
-            class="Skeleton u-flex u-positionRelative u-pointerEventsNone u-shadowNone u-backgroundLighter u-overflowHidden"
-            style={{ height: "4px", animationDuration: "2000ms" }}
-          ></div>
-        </div>
+        <div
+          class="Skeleton u-flex u-positionRelative u-pointerEventsNone u-shadowNone u-backgroundLighter u-overflowHidden"
+          style={{ height: "4px", animationDuration: "2000ms" }}
+        ></div>
         <div className="u-flex u-flexWrap u-justifyContentBetween u-marginTopMedium">
           {data.allMarkdownRemark.edges.map(({ node }, index) => (
             <div
@@ -26,10 +24,10 @@ export default ({ data }) => {
             >
               <div className="u-positionRelative">
                 <div
-                  className="u-positionAbsolute u-paddingVerticalTiny u-paddingHorizontalExtraSmall u-backgroundWhite u-textDark u-border"
+                  className="u-positionAbsolute u-paddingVerticalTiny u-paddingHorizontalExtraSmall u-backgroundWhite u-textDark u-borderDashed u-borderLight u-borderSmall hover:u-backgroundNegativeLight hover:u-textWhite u-fontMedium"
                   style={{ zIndex: "2", marginTop: "80%", marginLeft: "10%" }}
                 >
-                  {node.frontmatter.tags}
+                  {node.frontmatter.categories}
                 </div>
                 <Img
                   className="u-widthFull u-border"
@@ -104,7 +102,7 @@ export const query = graphql`
                 }
               }
             }
-            tags
+            categories
           }
           excerpt
           fields {
