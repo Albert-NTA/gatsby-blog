@@ -48,7 +48,7 @@ export default ({ data }) => {
                   />
                   <Link
                     to={node.fields.slug}
-                    className="u-text200 u-textDark u-fontBold"
+                    className="u-text100 u-textDark u-fontBold"
                     style={{ textDecoration: "none", paddingTop: "3px" }}
                   >
                     Admin by {node.frontmatter.author}
@@ -63,7 +63,7 @@ export default ({ data }) => {
                     alt=""
                     className="u-marginRightExtraSmall"
                   />
-                  <div className="u-text200" style={{ paddingTop: "2px" }}>
+                  <div className="u-text100" style={{ paddingTop: "3px" }}>
                     {node.frontmatter.date}
                   </div>
                 </div>
