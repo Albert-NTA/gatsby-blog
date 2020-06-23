@@ -25,6 +25,7 @@
 // }
 
 module.exports = {
+  pathPrefix: "/gatsby-blog",
   siteMetadata: {
     title: `Gatsby Blog Tutorial Demo`,
   },
