@@ -15,12 +15,11 @@ export default ({ data }) => {
           class="Skeleton u-flex u-positionRelative u-pointerEventsNone u-shadowNone u-backgroundLighter u-overflowHidden"
           style={{ height: "4px", animationDuration: "2000ms" }}
         ></div>
-        <div className="u-flex u-flexWrap u-justifyContentBetween u-marginTopMedium">
+        <div className="Grid Grid--smallGutter u-marginTopMedium">
           {data.allMarkdownRemark.edges.map(({ node }, index) => (
             <div
               key={index}
-              className="u-marginSmall"
-              style={{ maxWidth: "30%" }}
+              className="lg:u-size4of12 u-paddingSmall sm:u-size12of12 md:u-size6of12"
             >
               <div className="u-positionRelative">
                 <div
@@ -38,7 +37,7 @@ export default ({ data }) => {
               <h4 className="u-flex u-flexWrap">
                 <div
                   className="u-flexInline u-alignItemCenter u-textNegative"
-                  style={{ width: "50%" }}
+                  style={{ width: "60%" }}
                 >
                   <img
                     src={author}
@@ -56,14 +55,14 @@ export default ({ data }) => {
                 </div>
                 <div
                   className="u-flexInline u-alignItemCenter u-textDark"
-                  style={{ width: "50%" }}
+                  style={{ width: "40%" }}
                 >
                   <img
                     src={calendar}
                     alt=""
                     className="u-marginRightExtraSmall"
                   />
-                  <div className="u-text100" style={{ paddingTop: "3px" }}>
+                  <div className="u-text100 u-alignItemCenter" style={{ paddingTop: "3px" }}>
                     {node.frontmatter.date}
                   </div>
                 </div>
