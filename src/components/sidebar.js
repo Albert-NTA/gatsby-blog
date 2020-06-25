@@ -49,26 +49,31 @@ export default props => {
           class="Skeleton u-flex u-positionRelative u-pointerEventsNone u-shadowNone u-backgroundLighter u-overflowHidden u-marginBottomMedium"
           style={{ height: "4px", animationDuration: "2000ms" }}
         ></div>
-        {tags.map((tag, index) => (
-          <span key={index} className="tag u-paddingHorizontalSmall u-paddingVerticalExtraSmall u-border u-borderDashed u-marginRightMedium hover:u-backgroundNegative hover:u-textWhite">
-            <Link
-              to={`/tag/${slug(tag).toLowerCase()}/`}
-              className="u-textGray u-fontMedium u-text500 hover:u-textWhite"
+        <div className="u-flex u-flexWrap">
+          {tags.map((tag, index) => (
+            <span
+              key={index}
+              className="tag u-paddingHorizontalSmall u-paddingVerticalExtraSmall u-border u-borderDashed u-marginExtraSmall hover:u-backgroundNegative hover:u-textWhite"
             >
-              {tag}
-            </Link>
-          </span>
-        ))}
+              <Link
+                to={`/tag/${slug(tag).toLowerCase()}/`}
+                className="u-textGray u-fontMedium u-text500 hover:u-textWhite"
+              >
+                {tag}
+              </Link>
+            </span>
+          ))}
+        </div>
       </div>
       <div className="u-paddingMedium">
         <h1 className="u-marginNone">Recent News</h1>
         <div
-          class="Skeleton u-flex u-positionRelative u-pointerEventsNone u-shadowNone u-backgroundLighter u-overflowHidden"
+          class="Skeleton u-flex u-positionRelative u-pointerEventsNone u-shadowNone u-backgroundLighter u-overflowHidden u-marginBottomSmall"
           style={{ height: "4px", animationDuration: "2000ms" }}
         ></div>
         {news.map((new1, index) => (
           <div key={index} className="u-flex u-flexColumn">
-            <div className="Grid Grid--smallGutter u-paddingSmall u-alignItemsCenter">
+            <div className="Grid Grid--smallGutter u-paddingExtraSmall u-alignItemsCenter">
               <div className="u-positionRelative u-size1of3">
                 <Img
                   className="u-widthFull u-border"

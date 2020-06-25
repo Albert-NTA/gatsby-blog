@@ -48,8 +48,8 @@ export default props => {
         <div className="app">
           <Menu title={data.site.siteMetadata.title} />
           <div className="main Grid Grid--withoutGutter">
-            <div className="content u-size9of12">{children}</div>
-            <div className="sidebar u-size3of12">
+            <div className="content lg:u-size9of12 md:u-size8of12 sm:size12of12">{children}</div>
+            <div className="sidebar lg:lu-size3of12 md:u-size4of12 sm:size0of12">
               <Sidebar edges={data.topics.edges} />
             </div>
           </div>
