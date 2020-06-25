@@ -19,11 +19,11 @@ export default ({ data }) => {
           {data.allMarkdownRemark.edges.map(({ node }, index) => (
             <div
               key={index}
-              className="lg:u-size4of12 u-paddingSmall sm:u-size12of12 md:u-size6of12"
+              className="lg:u-size4of12 u-paddingSmall sm:u-size12of12 md:u-size0of12"
             >
               <div className="u-positionRelative">
                 <div
-                  className="u-positionAbsolute u-paddingVerticalTiny u-paddingHorizontalExtraSmall u-backgroundWhite u-textDark u-borderDashed u-borderLight u-borderSmall hover:u-backgroundNegativeLight hover:u-textWhite u-fontMedium"
+                  className="u-positionAbsolute u-paddingVerticalTiny u-paddingHorizontalExtraSmall u-backgroundWhite u-textDark u-border u-roundedMedium hover:u-backgroundNegativeLight hover:u-textWhite u-fontMedium"
                   style={{ zIndex: "2", marginTop: "80%", marginLeft: "10%" }}
                 >
                   {node.frontmatter.categories}
